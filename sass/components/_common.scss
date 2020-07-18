@@ -98,13 +98,6 @@ button:focus {
   cursor: pointer;
 }
 
-.social-link:hover,
-.social-link:focus {
-  --color1: #ffffff;
-  --color2: #ffffff;
-  background-color: $accent-color;
-}
-
 .social-link {
   display: inline-flex;
   align-items: center;
@@ -113,6 +106,18 @@ button:focus {
   border-radius: 50%;
   width: 44px;
   height: 44px;
+
+  transition-property: fill, color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  fill: #afb1b8;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: #fff;
+  }
 }
 
 .icon-social {
@@ -122,27 +127,6 @@ button:focus {
 
 .social .icon-social {
   --color2: $primary-text-color;
-}
-
-.social-link:hover,
-.social .social-link:focus {
-  background-color: $accent-color;
-  fill: #fff;
-}
-
-.social-link {
-  transition-property: fill, color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
-
-  fill: #afb1b8;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
 }
 
 .visually-hidden {

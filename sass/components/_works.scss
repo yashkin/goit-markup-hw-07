@@ -153,11 +153,11 @@
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-}
 
-.works-button:hover {
-  background-color: $accent-color;
-  color: $primary-white-color;
+  &:hover {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
 }
 
 /* .list-workbuton .item {

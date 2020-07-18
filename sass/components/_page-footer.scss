@@ -43,23 +43,23 @@ footer,
   margin-left: 10px;
 }
 
-/* .social .link {
+.social .link {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-} */
+}
 
 .social .link {
   transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
-}
 
-.social .link:hover,
-.social .link:focus {
-  color: $accent-color;
+  & .link:hover,
+  & .link:focus {
+    color: $accent-color;
+  }
 }
 
 .social .title {
@@ -105,9 +105,11 @@ footer,
   display: block;
 }
 
-.address .link:hover,
-.address .link:focus {
-  color: $accent-color;
+.address {
+  .link:hover,
+  .link:focus {
+    color: $accent-color;
+  }
 }
 
 .mailing {

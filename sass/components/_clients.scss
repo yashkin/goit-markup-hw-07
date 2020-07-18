@@ -3,18 +3,6 @@
   padding-bottom: 94px;
 }
 
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.clients-item {
-  /* fill: #afb1b8; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .clients a {
   transition-property: border-color, fill;
   transition-duration: 250ms;
@@ -31,12 +19,24 @@
   fill: #afb1b8;
 }
 
-.clients-item a:hover,
-.clients-item a:focus {
-  border-color: $accent-color;
-  fill: $accent-color;
-  --color2: $accent-color;
-  border-width: 2px;
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item {
+  /* fill: #afb1b8; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & a:hover,
+  & a:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+    --color2: $accent-color;
+    border-width: 2px;
+  }
 }
 
 .clients-icon-6 {
