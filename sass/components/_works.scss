@@ -65,18 +65,28 @@
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
+.works-list .link {
+  text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
 .works-list .link:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
-}
 
-.works-list .link:hover .text-hover {
-  opacity: 1;
-}
+  .text-hover {
+    opacity: 1;
+  }
 
-.works-list .link:hover .card-overlay {
-  transform: translateY(0);
-  opacity: 1;
+  .card-overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .works-list > img {
@@ -101,16 +111,6 @@
 
 .works-list .item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
-}
-
-.works-list .link {
-  text-decoration: none;
-  text-align: center;
-}
-
-.works-list.link:hover,
-.works-list.link:focus {
-  color: $accent-color;
 }
 
 .works-description {

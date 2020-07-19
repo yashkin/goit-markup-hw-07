@@ -56,8 +56,8 @@ footer,
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
 
-  & .link:hover,
-  & .link:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
@@ -77,18 +77,6 @@ footer,
   flex-direction: column;
 }
 
-.address-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
-
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .address .link {
   transition-property: fill, color;
   transition-duration: 250ms;
@@ -103,13 +91,23 @@ footer,
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
   display: block;
-}
 
-.address {
-  .link:hover,
-  .link:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
+}
+
+.address-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .mailing {

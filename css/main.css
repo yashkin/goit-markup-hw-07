@@ -17,6 +17,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -355,6 +359,14 @@ button:focus {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.container-hero {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .overlay {
@@ -970,8 +982,7 @@ footer,
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social .link .link:hover,
-.social .link .link:focus {
+.social .link:hover, .social .link:focus {
   color: #2196f3;
 }
 
@@ -995,17 +1006,6 @@ footer,
           flex-direction: column;
 }
 
-.address-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .address .link {
   -webkit-transition-property: fill, color;
   transition-property: fill, color;
@@ -1024,9 +1024,19 @@ footer,
   display: block;
 }
 
-.address .link:hover,
-.address .link:focus {
+.address .link:hover, .address .link:focus {
   color: #2196f3;
+}
+
+.address-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .mailing {
@@ -1147,6 +1157,15 @@ footer,
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
+.works-list .link {
+  text-decoration: none;
+  text-align: center;
+}
+
+.works-list .link:hover, .works-list .link:focus {
+  color: #2196f3;
+}
+
 .works-list .link:hover {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
@@ -1183,16 +1202,6 @@ footer,
 
 .works-list .item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
-}
-
-.works-list .link {
-  text-decoration: none;
-  text-align: center;
-}
-
-.works-list.link:hover,
-.works-list.link:focus {
-  color: #2196f3;
 }
 
 .works-description {
