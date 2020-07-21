@@ -30,8 +30,8 @@
   justify-content: center;
   align-items: center;
 
-  & a:hover,
-  & a:focus {
+  a:hover,
+  a:focus {
     border-color: $accent-color;
     fill: $accent-color;
     --color2: $accent-color;
